@@ -1,0 +1,23 @@
+5. Manually Insert Records
+Execute the following SQL commands in MySQL:
+
+sql
+Copy code
+INSERT INTO book (title, author, genre, price, published_year) VALUES
+('Book A', 'Author A', 'Fiction', 500.0, 2020),
+('Book B', 'Author B', 'Non-Fiction', 300.0, 2019);
+6. Testing with Postman
+Start the Spring Boot application.
+Use Postman to test the PUT request:
+Endpoint: http://localhost:8080/api/books/{id}
+Method: PUT
+Body (JSON):
+json
+Copy code
+{
+    "title": "Updated Book",
+    "author": "Updated Author",
+    "genre": "Updated Genre",
+    "price": 450.0,
+    "publishedYear": 2021
+}

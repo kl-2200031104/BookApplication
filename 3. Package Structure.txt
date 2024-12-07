@@ -1,0 +1,12 @@
+3. Package Structure
+rust
+Copy code
+com.klef.jfsd.exam
+controller
+model
+repository
+service
+service.impl
+4. Code Implementation
+4.1. Model Class
+Book.java
